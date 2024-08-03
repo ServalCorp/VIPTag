@@ -1,0 +1,16 @@
+local button = script.Parent
+local player = game:GetService('Players')
+local sprinting = false
+
+local function sprint()
+	local player = player.LocalPlayer
+	if sprinting then
+		sprinting = false
+		button.Text='Speed: Off'
+		player.Character.Humanoid.WalkSpeed = 16
+	else
+		sprinting = true
+		button.Text ='Speed: On'
+		player.Character.Humanoid.WalkSpeed =35 --change this if u want
+	end
+end  
