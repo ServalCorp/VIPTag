@@ -6,7 +6,7 @@ game.Players.PlayerAdded:Connect(function(player)
 		local Tags = {
 			{
 				TagText = "👑 VIP", -- Change GamepassName to whatever you want the players Chat Tag name to be.
-				TagColor = Color3.fromRGB(0, 170, 255) -- You can change the color of the Chat Tag Text here.
+				TagColor = Color3.fromRGB(242, 255, 0) -- You can change the color of the Chat Tag Text here.
 			}
 		}
 		local TextChatService = require(game:GetService("ServerScriptService"):WaitForChild("ChatServiceRunner").ChatService)
